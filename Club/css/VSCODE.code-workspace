@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../../../VSCODE"
+		},
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../Downloads/F1C1_start"
+		},
+		{
+			"path": "../../../Downloads/F1C1_solution"
+		},
+		{
+			"path": "../../../Downloads/flexbox-business-site-starting"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ItCareerSwitch"
+	}
+}

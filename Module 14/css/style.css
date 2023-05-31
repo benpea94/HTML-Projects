@@ -1,0 +1,239 @@
+body {
+    background-image: linear-gradient(white, black);
+}
+
+header img {
+    width: 100%; /*This stretches the image across the viewport.*/
+    max-width: 500px;
+    height: auto; /*The height will change based on the size of the viewport*/
+}
+
+nav {
+    margin-bottom: 1em; /*This places some space between elements.*/
+
+    font-weight: bold;
+    text-align: center;
+}
+
+nav ul{
+    padding: 0;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+nav ul li {
+    background-color: black;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin: 0.55em;
+    list-style-type: none;
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;/*This removes the underline from the hyperlink.*/
+}
+
+figure {
+    text-align: center;
+    background-color: white;
+
+}
+
+figure img {
+    max-width: 800px;
+    max-height: 600px;
+    width: 100%;
+    height: auto;
+}
+
+main {
+    background-color: white;
+    border-top: solid 0.3em black;
+    border-bottom: solid 0.3em black;
+    padding: 1em;
+    background-image: linear-gradient(white, white, grey);
+    min-height: 400px;
+    margin-bottom: 1em;
+    border-radius: 1.0em;
+}
+
+main .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+main div .column {
+    float: left;
+}
+
+main div .left{
+    width: 20%;
+    padding: 0.5%;
+    float: left;
+    
+}
+
+main div .right{
+    width: 25%;
+    padding: 0.5%;
+    float: right;
+}
+
+.schedule table{
+    border: 0.1em solid black;
+    border-collapse: collapse ;
+    width: 95%;
+    margin-left: 2.5%;
+    background-color: white;
+}
+
+.schedule caption {
+    border: 0.1em solid black;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.schedule th, .schedule td {
+    border: 0.1em solid black;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.schedule th {
+    background-color: black;
+    color: white;
+}
+
+#enrolltext table{
+    border: none;
+}
+
+#enrollprice {
+    border: 0.1em solid black;
+    border-collapse: collapse;
+}
+
+#enrollprice td {
+    border: 0.1em solid black;
+    padding: 0.5em;
+    text-align: center;
+}
+
+footer {
+    background-image: linear-gradient(to right, white, grey);
+    box-shadow: 0.5em 0.5em 0.5em black;
+    border-radius: 1.0em;
+    text-align: center;
+
+}
+
+/*Begin mobile.*/
+@media  screen and (max-width: 640px){
+    
+    nav ul li {
+        border-radius: 1em;
+    }
+
+    .tablet {
+        display: none;
+
+    }
+
+    .desktop {
+        display: none;
+    }
+
+}
+/*End mobile.*/
+
+/*Begin tablet.*/
+@media  screen and (min-width: 641px){
+    
+    nav ul li {
+        padding: 0.7em;
+        border-top: solid 0.2em black;
+        border-bottom: solid 0.2em black;
+        display: inline-block;/*This lists items horizontally and allows them to stretch.*/
+        border-radius: 1em;
+        box-shadow: 0.5em 0.5em 0.5em black;
+        min-width: 10%;
+
+    }
+    
+    figure {
+        box-shadow: 0.5em 0.5em 0.5em black;
+
+    }
+
+    main {
+        box-shadow: 0.5em 0.5em 0.5em black;
+
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    main div .center{
+        width: 60%;
+        border-right: 0.3em solid black;
+
+         
+    }
+}
+/*End tablet.*/
+
+/*Begin desktop.*/
+@media  screen and (min-width: 961px){
+    
+    header {
+        background-image: linear-gradient(to right, white, black, black, black);
+        box-shadow: 0.5em 0.5em 0.5em black;
+
+    }
+
+    header img {
+        width: auto;
+        height: 5em;
+        
+    }
+
+    nav {
+        padding-top: 0.4em;
+        background-color: black;
+        float: right; /*This floats the nav element to the right side of the page.*/
+        margin-top: -5.2em; /*This moves in nav element above where it would normally be.*/
+        width: 57%;
+        border-top: solid 0.2em black;
+        border-bottom: solid 0.2em black;
+        max-width: 50%;
+
+
+    }
+
+    nav ul li {
+        min-width: 10%;
+    }
+
+    nav ul li {
+        display: inline-block;/*This lists items horizontally and allows them to stretch.*/
+        border-radius: 0.5em;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    main div .center{
+        width: 51%;
+        padding: 0.5%;
+        border-left: 0.3em solid black;
+        border-right: 0.3em solid black;
+         
+    }
+
+}
+/*End desktop.*/

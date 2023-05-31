@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "VSCODE",
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "VSCODE"
+	}
+}

@@ -1,0 +1,216 @@
+body {
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Space Mono', monospace; 
+    color: antiquewhite;
+    background-color:  rgb(247, 161, 99);
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    
+}
+
+  header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 179, 255);
+    height: 80px;
+    width: 100%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 5;
+  }
+
+  h1 {
+    margin: 0;
+    padding-left: 10px;
+    flex-grow: 1;
+  }
+
+
+header img {
+    display: block;
+    opacity: 0.25;
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    object-position: 50% 70%;    
+
+}
+
+
+.blend-image {
+    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 100%, 0% 100%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+}
+
+  nav {
+    margin-right: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav ul li {
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: antiquewhite;
+  }
+  
+  nav ul li a:hover {
+    font-size: 20.5px;
+    text-decoration: underline;
+    transition: font-size 0.15s ease-in;
+  }
+  
+main {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about {
+    text-align: center;
+    background-image: url(/Club/media/images/happy-runners.jpg);
+    background-size: cover;
+    background-position: top center;
+    width: 80%;
+    padding: 9%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: rgb(0, 179, 255);
+    padding: 10px;
+    opacity: 0.85;
+  }
+  
+  .about p {
+    font-size: 20px;
+    margin-top: 0;
+    padding: 10px 30px;
+    text-align: center;
+    background-color: rgb(0, 179, 255);
+    opacity: 0.85;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .photo-gallery {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .photo-gallery h1 {
+    text-align: center;
+  }
+  
+  .image-item {
+    text-align: center;
+    flex: 0 0 calc(33.33% - 20px);
+  }
+  
+  .image-item img {
+    width: 1000px;
+    height: auto;
+    max-height: 700px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .image-description {
+    margin-top: 10px;
+    font-size: larger;
+  }
+
+  .get-running {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: left;
+    width: 100%;
+    
+  }
+
+  .get-running h1 {
+    color: rgb(174, 40, 219);
+    text-align: left;
+
+
+  }
+  
+.get-running p span {
+    color: rgb(174, 40, 219);
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+
+  footer {
+    height: 180px;
+    background-color:  rgb(0, 179, 255);;
+    text-align: center; 
+  }
+  
+  .footer-container {
+    border-top: 1px solid antiquewhite;
+    margin: 0 auto;
+  }
+  
+  .footer-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+  }
+  
+
+  /* Media query for smaller viewport sizes */
+@media (max-width: 1023px) {
+    .image-item img {
+      width: 70%;
+    }
+    header img {
+        display: none;
+    }
+    .get-running {
+        text-align: center;
+    }
+    .get-running h1 {
+        text-align: center;
+    }
+  }
+  
+  /* Media query for even smaller viewport sizes */
+  @media (max-width: 600px) {
+    .image-item img {
+      width: 50%; 
+    }
+    header h1 {
+        display: none;
+    }
+
+    header img {
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
